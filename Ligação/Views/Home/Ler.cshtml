@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Ler";
+}
+
+<h1>Pesquisa de Usuario</h1>
+
+<div class="text-black">
+    <form method="post" asp-action="Ler">
+        <label>ID</label>
+        <input type="number" name="id" />
+        <button type="submit">Pesquisar</button>
+    </form>
+</div>
+<p>@ViewData["Message"]</p>
+
+<p>Usuario: @ViewData["usuarioe"]</p>
+<p>Senha: @ViewData["senhae"]</p>

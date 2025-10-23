@@ -1,0 +1,20 @@
+﻿@using Ligação.Models
+@{
+    ViewData["Title"] = "UPDATE";
+}
+
+<h1>UPDATE</h1>
+
+<div class="text-center">
+    <form method="post" asp-action="UPDATE">
+        <label>id:</label>
+        <input type="number" name="id" />
+        <label>Usuaruio</label>
+        <input type="text" name="usuario" />
+        <label> Senha:</label>
+        <input type="password" name="senha" />
+        <button action="submit">Alterar</button>
+    </form> 
+</div>
+<p>@ViewData["Message"]</p>
+
